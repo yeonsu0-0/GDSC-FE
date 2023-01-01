@@ -1,10 +1,10 @@
 import React from 'react'
 import useForm from './useForm'
-import validateInfo from './validateInfo';
+import validate from './validateInfo';
 
-const SignUp = (submitForm) => {
+const SignUp = ({submitForm}) => {
 
-  const{ handleChange, values, handleSubmit, errors } = useForm(submitForm, validateInfo);
+  const{ handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
 
   return ( 
     <div className="form-content-right">

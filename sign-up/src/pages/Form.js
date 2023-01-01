@@ -18,7 +18,7 @@ const Form = () => {
         {!isSubmitted ? (
           <SignUp submitForm={submitForm} />
         ) : (
-          console.log("ㅎㅇ")
+          <FormSuccess />
         )}
     </div>
     </>
